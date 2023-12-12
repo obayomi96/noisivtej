@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  padding: 0;
-  color: #5a43ba;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: rgb(27, 25, 25);
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

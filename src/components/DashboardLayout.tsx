@@ -33,7 +33,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({
   }, []);
 
   return (
-    <div className="flex flex-col items-center h-[100vh] bg-[#fff] pb-[91px] w-full overflow-hidden">
+    <div className="flex flex-col items-center h-[100vh] bg-[#fff] pb-[91px] min-w-full overflow-hidden">
       <div className="dashh">
         <div className="w-full flex">
           <Sidebar />
@@ -59,7 +59,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({
             <div ref={pageTop} />
           </div>
           <div
-            className="w-full relative pb-[30px] h-full"
+            className="w-full relative pb-[30px] h-full px-6"
             style={{ overflow: overflowStyle }}
           >
             {children}

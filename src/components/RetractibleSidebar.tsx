@@ -10,7 +10,6 @@ import BarChartIcon from "@mui/icons-material/BarChart";
 import SettingsIcon from "@mui/icons-material/Settings";
 import HelpIcon from "@mui/icons-material/Help";
 import LogoutIcon from "@mui/icons-material/Logout";
-
 import { ReactComponent as CloseIcon } from "../svgs/close-icon.svg";
 import MenuItem from "./MenuItem";
 import LogoutModal from "./LogoutModal";
@@ -96,13 +95,13 @@ const RetractibleSidebar: React.FC<IProps> = ({ isMenuOpen, dismiss }) => {
         "-translate-x-full": !isMenuOpen,
       })}
     >
-      <div className="w-1/2 h-full bg-[#17A397] relative pt-[47px] text-sm font-semibold border border-t-0 border-[#d1d2d4]-500 shadow shadow-[4px 4px 15px 4px rgba(51, 51, 51, 0.05)] content-center lg:content-start text-left flex flex-col justify-between overflow-y-auto min-h-[100vh]">
+      <div className="w-1/2 h-full bg-[#3884B6] relative pt-[47px] text-sm font-semibold border border-t-0 border-[#d1d2d4]-500 shadow shadow-[4px 4px 15px 4px rgba(51, 51, 51, 0.05)] content-center lg:content-start text-left flex flex-col justify-between overflow-y-auto min-h-[100vh]">
         <div className="w-full flex items-center justify-between px-4 mb-4 lg:mb-0">
           <div className="flex flex-col justify-start">
-            <div className="font-[600] text-[#7CDC93] text-[28px] flex justify-start items-center pb-0 w-full">
+            <div className="font-[600] text-[#fff] text-[28px] flex justify-start items-center pb-0 w-full">
               JetVision
             </div>
-            <p className="w-full text-xs font-normal text-black px-[20px] pl-8 mx-auto text-left">
+            <p className="w-full text-xs font-normal text-white px-[20px] pl-8 mx-auto text-left">
               By JetStreams
             </p>
           </div>
@@ -132,16 +131,7 @@ const RetractibleSidebar: React.FC<IProps> = ({ isMenuOpen, dismiss }) => {
                 }}
               />
             ))}
-          </div>
-
-          <div className="w-[90%] my-[100px] h-auto mx-auto flex flex-col text-white text-center">
-            <div className="font-bold">Warephase Technologies</div>
-            <p className="font-normal text-xs">
-              High street 123, Phoenix <br /> 85010, Arizona, USA.
-            </p>
-          </div>
-
-          <div className="bottom-0">
+            <div className="my-8 w-full border border-[#7393B3]" />
             {bottomMenus.map((item) => (
               <MenuItem
                 key={item.label}

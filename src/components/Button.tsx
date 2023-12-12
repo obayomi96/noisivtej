@@ -70,12 +70,12 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={clsx({
-        "flex items-center text-sm justify-center rounded-[80px] font-[500] w-full":
+        "flex items-center text-sm justify-center rounded-[20px] font-[500] w-full shadow-gray-500 shadow-sm":
           true,
         "rounded-[8px]": noRounded === true,
-        "bg-[#5a43ba] text-[#fff]": variant === "primary",
+        "bg-[#57BE6C] text-[#fff]": variant === "primary",
         "bg-[#fdfdfd]": variant && ["secondary"].includes(variant),
-        "text-[#34623F] border-[1px] border-solid border-[#5a43ba]":
+        "text-[#57BE6C] border-[1px] border-solid border-[#57BE6C] bg-transparent":
           variant === "secondary",
         "opacity-50": disabled,
         "!w-[260px] h-[40px]": size === "large",

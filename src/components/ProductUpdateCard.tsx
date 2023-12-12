@@ -12,7 +12,7 @@ const ProductUpdateCard: React.FC<ProductUpdateCardProps> = ({
   srcUrl,
 }) => {
   return (
-    <div className="rounded-md min-w-full lg:min-w-[358px] h-[399px] flex flex-col border border-[#E8E8E8] mx-2">
+    <div className="rounded-md min-w-full lg:min-w-[358px] h-[399px] flex flex-col border border-[#E8E8E8] mx-2 lg:my-0 my-2">
       <div className="w-full h-[50%] py-3 bg-[#3884B60D] flex justify-center">
         <img className="w-[266px] h-full" src={srcUrl} alt="" />
       </div>

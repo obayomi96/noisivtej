@@ -11,7 +11,7 @@ const NewsUpdateCard: React.FC<NewsUpdateCardProps> = ({
   srcUrl,
 }) => {
   return (
-    <div className="rounded-md min-w-full lg:min-w-[358px] min-h-[399px] flex flex-col border border-[#E8E8E8] mx-2 box-border p-0">
+    <div className="rounded-md min-w-full lg:min-w-[358px] min-h-[399px] flex flex-col border border-[#E8E8E8] mx-2 box-border p-0 lg:my-0 my-2">
       <div className="w-full h-[50%] flex justify-center rounded-md bg-[#EAF3F2] p-0">
         <img
           className="hover:opacity-75 cursor-pointer  p-0 h-[217px]"

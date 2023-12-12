@@ -1,7 +1,5 @@
 .dash-body {
-  position: relative !important;
   display: grid !important;
-  grid-template-rows: 11% auto !important;
   @media (max-width: 1023px) {
     display: block !important;
   }

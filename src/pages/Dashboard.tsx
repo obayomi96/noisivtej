@@ -8,26 +8,26 @@ function Dashboard() {
     <DashboardLayout>
       <div className="p-4 mt-[20px]">
         <div className="w-full mt-10">
-          <h1 className="text-2xl text-center">
+          <h1 className="text-xl text-center">
             Your Dashboard will be live in
           </h1>
-          <div className="text-center flex justify-center items-baseline mt-4 mb-8">
+          <div className="w-full text-center flex justify-center items-baseline mt-4 mb-8">
             <div className="">
-              <div className="text-[50px] font-[800]">00 :</div>
+              <div className="text-[40px] font-[800]">00 :</div>
               <p className="text-xs">Days</p>
             </div>
             <div>
-              <div className="text-[50px] font-[800]">00 :</div>
+              <div className="text-[40px] font-[800]">00 :</div>
               <p className="text-xs">Hours</p>
             </div>
             :{" "}
             <div>
-              <div className="text-[50px] font-[800]">00 :</div>
+              <div className="text-[40px] font-[800]">00 :</div>
               <p className="text-xs">Minutes</p>
             </div>
             :{" "}
             <div>
-              <div className="text-[50px] font-[800]">00</div>
+              <div className="text-[40px] font-[800]">00</div>
               <p className="text-xs">Seconds</p>
             </div>
           </div>

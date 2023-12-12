@@ -14,7 +14,7 @@ const NewsUpdateCard: React.FC<NewsUpdateCardProps> = ({
   srcUrl,
 }) => {
   return (
-    <div className="w-full h-auto py-8 lg:py-4 my-3 leading-[1.8rem] flex items-center justify-between border-b border-[#ddd]">
+    <div className="w-full h-auto pb-10 lg:py-4 mb-8 lg:my-3 leading-[1.8rem] flex items-center justify-between border-b border-[#ddd]">
       <div className="w-[40%]">
         <img className="w-full h-[100px]" src={srcUrl} alt="news img" />
       </div>

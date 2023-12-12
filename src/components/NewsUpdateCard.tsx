@@ -1,28 +1,30 @@
 import React from "react";
-
 interface NewsUpdateCardProps {
   title: string;
   description: string;
-  date: string;
   srcUrl: string;
 }
 
 const NewsUpdateCard: React.FC<NewsUpdateCardProps> = ({
   title,
   description,
-  date,
   srcUrl,
 }) => {
   return (
-    <div className="w-full h-auto pb-10 lg:py-4 mb-8 lg:my-3 leading-[1.8rem] flex items-center justify-between border-b border-[#ddd]">
-      <div className="w-[40%]">
-        <img className="w-full h-[100px]" src={srcUrl} alt="news img" />
+    <div className="rounded-md min-w-full lg:min-w-[358px] min-h-[399px] flex flex-col border border-[#E8E8E8] mx-2 box-border p-0">
+      <div className="w-full h-[50%] flex justify-center rounded-md bg-[#EAF3F2] p-0">
+        <img
+          className="hover:opacity-75 cursor-pointer  p-0 h-[217px]"
+          src={srcUrl}
+          alt=""
+        />
       </div>
-      <div className="w-4" />
-      <div className="w-[60%] h-[100px]">
-        <h1 className="font-bold">{title}</h1>
-        <p className="text-sm text-[gray]">{description}</p>
-        <p className="text-[gray]">{date}</p>
+      <div className="p-4 box-border">
+        <p className="text-[18px] font-[700] text-[#323232] pb-5 mt-5">
+          {title}
+        </p>
+        <p className="text-[16px] font-[400] text-[#323232]">{description}</p>
+        <div className="text-semibold text-[#57BE6C] pt-2">Read more</div>
       </div>
     </div>
   );

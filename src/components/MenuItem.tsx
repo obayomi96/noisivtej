@@ -16,15 +16,14 @@ const MenuItem: React.FC<MenuItemProps> = ({
   return (
     <li
       className={clsx({
-        "flex items-center text-[#fff] lg:text-white justify-start pl-4  mx-auto mb-[15px] w-full h-[40px] cursor-pointer":
+        "flex items-center text-[#fff] lg:text-white justify-start px-4  mx-auto mb-[15px] w-full h-[40px] cursor-pointer rounded-lg":
           true,
-        "bg-transparent border border-[#fff]  border-l-8 border-[#fff]  font-[800]":
-          isActive,
+        "bg-[#7393B3] font-[800]": isActive,
       })}
       onClick={onClick}
     >
       {icon}
-      <div className="w-8" />
+      <div className="w-5" />
       <div
         className={clsx({
           "w-100 h-100 text-medium font-normal leading-normal text-white z-100":

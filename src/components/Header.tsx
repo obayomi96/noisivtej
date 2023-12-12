@@ -1,7 +1,8 @@
 import React from "react";
 import clsx from "clsx";
-import { ReactComponent as NotificationIcon } from "../svgs/notification-icon.svg";
+import NotificationsIcon from "@mui/icons-material/Notifications";
 import Menu from "@mui/material/Menu";
+import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 
 interface HeaderProps {
   loggedIn?: boolean | null;
@@ -22,42 +23,41 @@ const Header: React.FC<HeaderProps> = ({ loggedIn = true, headerTitle }) => {
   return (
     <div
       className={clsx({
-        "hidden lg:flex z-10 top-0 items-center justify-between bg-[#FFFFFF] w-full h-[100px] m-auto mt-0 relative":
+        "hidden lg:flex z-10 top-0 items-center justify-between bg-[#FFFFFF] w-full h-[100px] m-auto mt-0 relative px-6":
           true,
         "bg-[#FBFEF7]": loggedIn,
       })}
     >
       {loggedIn ? (
         <div className="w-full flex flex-wrap sm:flex-nowrap items-center justify-evenly">
-          <div className="flex flex-col  pl-0 m-auto w-[100%] ml-3">
+          <div className="flex flex-col  pl-0 m-auto w-[30%] ml-3 ">
             <>
-              <div className="text-[14px] font-[600]  ">
-                {headerTitle ? headerTitle : "Welcome, Ayesha!"}
+              <div className="text-[20px] font-[600]">
+                {headerTitle ? headerTitle : "Welcome, Ayesha!  😎"}
               </div>
-              <p className="text-xs">
-                {headerTitle
-                  ? ""
-                  : "Get and manage purchase orders. Stay on top of market trends"}
+              <p className="text-sm text-[#2e2d2d]">
+                {headerTitle ? "" : "Get and manage purchase orders on the go."}
               </p>
             </>
           </div>
-          <div className="flex items-center">
-            <div className="w-[250px] mr-4">
-              <input
-                type="text"
-                name="search"
-                placeholder="Search.."
-                autoComplete="off"
-              />
-            </div>
+          <div className="bg-transparent p-2 w-[40%] h-[40px] flex items-center justify-start mr-4 border border-[#ccc] rounded-[40px]">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search.."
+              autoComplete="off"
+            />
+          </div>
+
+          <div className="flex justify-end items-center w-[100px]">
             <button
-              className="ml-4"
+              className="ml-4 w-[30px]  h-[30px]"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
             >
-              <NotificationIcon />
+              <NotificationsIcon className="w-[50px] h-[50px]" />
             </button>
             <Menu
               id="basic-menu"
@@ -76,22 +76,22 @@ const Header: React.FC<HeaderProps> = ({ loggedIn = true, headerTitle }) => {
               </div>
             </Menu>
           </div>
-          <div className="w-[50px]" />
-
-          <div className="flex items-center justify-end mr-[50px] ">
-            <div className="w-[20px]" />
-            <div>
-              <p className="text-xs font-bold ">Ayesha Habib</p>
-              <p className="text-xs font-normal text-[#000]">
-                AyeshaHabib@gmail.com
-              </p>
-            </div>
-            <div className="w-[20px]" />
+          <div className="w-[300px] flex items-center justify-end ml-[30px] px-5 py-2 bg-[#F9F9F9] rounded-3xl">
             <img
               src="/assets/images/avatar.png"
               alt="avatar"
-              className="w-[40px] h-[40px] rounded-full ml-2"
+              className="w-[40px] h-[40px] rounded-full mr-4"
             />
+            <div className="w-[20px]" />
+            <div>
+              <p className="text-sm font-semibold ">Ayesha Habib</p>
+              <p className="text-xs font-normal text-[#2e2d2d]">
+                AyeshaHabib@gmail.com
+              </p>
+            </div>
+            <div className="w-auto h-auto">
+              <ArrowDropDownRoundedIcon fontSize="large" />
+            </div>
           </div>
         </div>
       ) : (

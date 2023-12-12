@@ -1,109 +1,115 @@
 import React from "react";
-import { Fade } from "react-slideshow-image";
+
+import CampaignRoundedIcon from "@mui/icons-material/CampaignRounded";
 import DashboardLayout from "../components/DashboardLayout";
 import NewsUpdateCard from "../components/NewsUpdateCard";
+import Button from "../components/Button";
+import ProductUpdateCard from "../components/ProductUpdateCard";
 
 function Dashboard() {
   return (
     <DashboardLayout>
       <div className="p-4 mt-[20px]">
-        <div className="w-full mt-10">
-          <h1 className="text-xl text-center">
-            Your Dashboard will be live in
-          </h1>
-          <div className="w-full text-center flex justify-center items-baseline mt-4 mb-8">
-            <div className="">
-              <div className="text-[40px] font-[800]">00 :</div>
-              <p className="text-xs">Days</p>
-            </div>
-            <div>
-              <div className="text-[40px] font-[800]">00 :</div>
-              <p className="text-xs">Hours</p>
-            </div>
-            :{" "}
-            <div>
-              <div className="text-[40px] font-[800]">00 :</div>
-              <p className="text-xs">Minutes</p>
-            </div>
-            :{" "}
-            <div>
-              <div className="text-[40px] font-[800]">00</div>
-              <p className="text-xs">Seconds</p>
+        <div className="w-full h-auto lg:h-[250px] bg-gradient-to-r from-[#3884B6] from-10% to-[#57BE6C] via-20% to-100% mt-4 rounded-lg p-5 lg:p-8 flex flex-wrap lg:flex-nowrap justify-start items-center box-border">
+          <div className="w-full lg:w-[40%]">
+            <h1 className="text-xl mb-4">Exciting features coming soon! 🚀</h1>
+            <p className="text-[#2e2d2d]">
+              We're thrilled to announce upcoming <br /> enhancements to make
+              your experience even better!
+            </p>
+            <div className="w-full lg:w-[180px]">
+              <Button
+                label="I want to be notified"
+                // size=""
+                variant="primary"
+                additionalClassname="mt-3"
+                iconPosition="left"
+                icon={<CampaignRoundedIcon />}
+                // onClick={() => navigate("/home")}
+              />
             </div>
           </div>
+          <div className="lg:w-20" />
 
-          <p className="text-center text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi.
-          </p>
+          <div className="w-full flex justify-start items-baseline mt-4 mb-8 mx-auto">
+            <div className="text-center p-3 py-2 lg:w-[93px] lg:h-[98px] bg-[#fff] border-none rounded-lg mx-1 ">
+              <div className="lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
+                00
+              </div>
+              <p className="text-xs text-center text-[#323232]">DAYS</p>
+            </div>
+            <div className="text-center p-3 py-2 lg:w-[93px] lg:h-[98px] bg-[#fff] border-none rounded-lg mx-1 ">
+              <div className="lg:text-[40px] font-[800] text line-through decoration-1 decoration-white">
+                05
+              </div>
+              <p className="text-xs text-center text-[#323232]">HOURS</p>
+            </div>{" "}
+            <div className="text-center p-3 py-2 lg:w-[93px] lg:h-[98px] bg-[#fff] border-none rounded-lg mx-1 ">
+              <div className="lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
+                20
+              </div>
+              <p className="text-xs text-center text-[#323232]">MINUTES</p>
+            </div>{" "}
+            <div className="text-center p-3 py-2 lg:w-[93px] lg:h-[98px] bg-[#fff] border-none rounded-lg mx-1 ">
+              <div className="lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
+                10
+              </div>
+              <p className="text-xs text-center text-[#323232]">SECONDS</p>
+            </div>
+          </div>
+          {/* <div className="w-[400] h-[400]">
+            <img
+              className="w-[355px] h-[322px]"
+              width={355}
+              height={322}
+              src="/assets/images/pcopen.png"
+              alt=""
+            />
+          </div> */}
         </div>
 
-        <div className="w-full mt-[150px] flex flex-wrap lg:flex-nowrap">
-          <div className="w-full lg:w-1/2 h-[400px] rounded-lg border border-[#ddd] p-4">
-            <p className="font-[700] text-[20px]">Product features</p>
-            <div>
-              <Fade indicators={true}>
-                <div className="each-slide">
-                  <div>
-                    <img src="/assets/images/bg.png" alt="slide 1" />
-                  </div>
-                </div>
-                <div className="each-slide">
-                  <div>
-                    <img src="/assets/images/image1.jpg" alt="slide 2" />
-                  </div>
-                </div>
-                <div className="each-slide">
-                  <div>
-                    <img src="/assets/images/image2.jpg" alt="slide 3" />
-                  </div>
-                </div>
-              </Fade>
-            </div>
+        <div className="w-full h-auto mt-[50px]">
+          <p className="font-[700] text-[20px] pb-4">Product updates</p>
+          <div className="w-full flex flex-wrap lg:flex-nowrap justify-start items-center">
+            <ProductUpdateCard
+              title=" Easy to use"
+              description="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin
+          integer dui et. Ac aliquam sit tellus nunc odio interdum."
+              srcUrl="/assets/images/easy2use.png"
+            />
+            <ProductUpdateCard
+              title="Track shipment easily"
+              description="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin
+          integer dui et. Ac aliquam sit tellus nunc odio interdum."
+              srcUrl="/assets/images/trackshipment.png"
+            />
+            <ProductUpdateCard
+              title="Generate reports"
+              description="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin
+          integer dui et. Ac aliquam sit tellus nunc odio interdum."
+              srcUrl="/assets/images/generalship.png"
+            />
           </div>
-          <div className="w-4" />
-          <div className="block lg:hidden h-4" />
+        </div>
 
-          {/* THE DATA PASSED TO THE COMPONENTS BELOW WILL COME FROM AND API AND MAPPED */}
-          <div className=" w-full lg:w-1/2 h-[500px] rounded-lg border border-[#ddd] p-4 overflow-y-scroll">
-            <p className="font-[700] text-[20px]">News Updates</p>
-            <div className="w-full h-full ">
-              <NewsUpdateCard
-                title=" JetStreams 2024 goals"
-                description="  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id es"
-                date="12 November 2023"
-                srcUrl="/assets/images/bg.png"
-              />
-              <NewsUpdateCard
-                title="Exectpti titr"
-                description="  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id es"
-                date="12 November 2023"
-                srcUrl="/assets/images/image4.jpg"
-              />
-              <NewsUpdateCard
-                title="Wall street journal"
-                description="  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id es"
-                date="12 November 2023"
-                srcUrl="/assets/images/image1.jpg"
-              />
-              <NewsUpdateCard
-                title="Forbes new members"
-                description="  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id es"
-                date="12 November 2023"
-                srcUrl="/assets/images/image2.jpg"
-              />
-              <NewsUpdateCard
-                title="Welcome to JetVision"
-                description="  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id es"
-                date="12 November 2023"
-                srcUrl="/assets/images/ctlogo.png"
-              />
-            </div>
+        <div className="w-full h-auto mt-[50px]">
+          <p className="font-[700] text-[20px] pb-4">News updates</p>
+          <div className="w-full flex flex-wrap lg:flex-nowrap justify-start items-center">
+            <NewsUpdateCard
+              title="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin integer dui et"
+              description="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin integer dui et. Ac aliquam sit tellus nunc odio interdum. "
+              srcUrl="/assets/images/newu1.png"
+            />
+            <NewsUpdateCard
+              title="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin integer dui et"
+              description="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin integer dui et. Ac aliquam sit tellus nunc odio interdum. "
+              srcUrl="/assets/images/newu2.png"
+            />
+            <NewsUpdateCard
+              title="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin integer dui et"
+              description="Lorem ipsum dolor sit amet consectetur. Consectetur pretium proin integer dui et. Ac aliquam sit tellus nunc odio interdum. "
+              srcUrl="/assets/images/newu3.png"
+            />
           </div>
         </div>
       </div>

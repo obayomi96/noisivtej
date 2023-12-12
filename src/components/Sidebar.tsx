@@ -76,22 +76,23 @@ const Sidebar: React.FC = () => {
   const bottomMenus = [
     {
       path: "",
-      label: "Log out",
+      label: "Sign out",
       icon: <LogoutIcon stroke="#fff" />,
       activeIcon: <LogoutIcon stroke="#fff" />,
     },
   ];
+
   return (
-    <div className="hidden lg:block relative w-full bg-[#17A397] min-h-[100vh] text-sm font-semibold  border-t-0 border-[#d1d2d4]-500 min-w-[1024px]:left-0 lg:top-0 content-center lg:content-start text-left justify-between ml-0 pl-0 overflow-y-auto">
-      <div className="font-[600] text-[#fff] text-[28px] flex justify-start pl-8  items-center pt-[50px] pb-0 px-[20px] w-full">
-        JetVision
+    <div className="hidden lg:block relative w-full bg-[#3884B6] min-h-[100vh] text-sm font-semibold  border-t-0 border-[#d1d2d4]-500 min-w-[1024px]:left-0 lg:top-0 content-center lg:content-start text-center justify-center ml-0 pl-0 mx-auto">
+      <div className="font-[600] text-[#fff] text-[28px] flex justify-center pl-8  items-center pt-[50px] pb-0 px-[20px] w-full text-center mx-auto">
+        Jetvision
       </div>
-      <p className="w-full text-xs font-normal text-black px-[20px] pl-8 mx-auto">
+      <p className="w-full text-xs font-normal text-white px-[20px] pl-8 mx-auto">
         By JetStreams
       </p>
       <div className="h-[50px]" />
-      <div className="h-[100vh] flex flex-col justify-between">
-        <div>
+      <div className=" flex flex-col justify-between items-center">
+        <div className="w-auto px-5 mx-auto flex flex-col items-center justify-center">
           {menuItems.map((item) => (
             <MenuItem
               key={item.label}
@@ -101,20 +102,15 @@ const Sidebar: React.FC = () => {
               }
               label={item.label}
               onClick={() => {
-                handleMenuClick(item.path);
+                if (item.label === "Sign out") {
+                  setIsLogoutModal(true);
+                } else {
+                  handleMenuClick(item.path);
+                }
               }}
             />
           ))}
-        </div>
-
-        <div className="w-[90%] my-[100px] h-auto mx-auto flex flex-col text-white text-center">
-          <div className="font-bold">Warephase Technologies</div>
-          <p className="font-normal text-xs">
-            High street 123, Phoenix <br /> 85010, Arizona, USA.
-          </p>
-        </div>
-
-        <div className="relative bottom-0">
+          <div className="my-8 w-full border border-[#7393B3]" />
           {bottomMenus.map((item) => (
             <MenuItem
               key={item.label}

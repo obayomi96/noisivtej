@@ -43,6 +43,7 @@ const LogoutModal: React.FC<IProps> = ({ closeModal, isVisible = false }) => {
               variant="primary"
               onClick={() => navigate("/home")}
               noRounded={true}
+              additionalClassname="hover:opacity-75 cursor-pointer"
             />
           </div>
         </div>

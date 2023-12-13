@@ -16,11 +16,11 @@ function Dashboard() {
               We're thrilled to announce upcoming <br /> enhancements to make
               your experience even better!
             </p>
-            <div className="w-full lg:w-[180px]">
+            <div className="w-full lg:w-[180px] ">
               <Button
                 label="I want to be notified"
                 variant="primary"
-                additionalClassname="mt-3"
+                additionalClassname="mt-3 hover:opacity-75 cursor-pointer"
                 iconPosition="left"
                 icon={<CampaignRoundedIcon />}
                 noRounded={true}

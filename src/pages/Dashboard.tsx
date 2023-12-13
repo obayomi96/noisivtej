@@ -4,6 +4,8 @@ import DashboardLayout from "../components/DashboardLayout";
 import NewsUpdateCard from "../components/NewsUpdateCard";
 import Button from "../components/Button";
 import ProductUpdateCard from "../components/ProductUpdateCard";
+import ShipmentChart from "../components/ShipmentChart";
+import LogisticsChart from "../components/LogisticsSummary";
 
 function Dashboard() {
   return (
@@ -54,6 +56,18 @@ function Dashboard() {
               </div>
               <p className="text-xs text-center text-[#323232]">SECONDS</p>
             </div>
+          </div>
+        </div>
+
+        <div className="w-full flex flex-wrap lg:flex-nowrap items-center justify-between mt-10 mb-20">
+          <div className="w-full lg:w-[45%] h-[250px]">
+            <p className="font-bold text-[#2e2d2d] my-2">Shipment Summary </p>
+            <ShipmentChart />
+          </div>
+          <div className="w-2" />
+          <div className="w-full lg:w-[45%] h-[250px]">
+            <p className="font-bold text-[#2e2d2d] my-2">Logistics Summary </p>
+            <LogisticsChart />
           </div>
         </div>
 

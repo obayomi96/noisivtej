@@ -24,7 +24,9 @@ const NewsUpdateCard: React.FC<NewsUpdateCardProps> = ({
           {title}
         </p>
         <p className="text-[16px] font-[400] text-[#323232]">{description}</p>
-        <div className="text-semibold text-[#57BE6C] pt-2">Read more</div>
+        <div className="text-[14px] font-[700] text-[#57BE6C] pt-2">
+          Read more
+        </div>
       </div>
     </div>
   );

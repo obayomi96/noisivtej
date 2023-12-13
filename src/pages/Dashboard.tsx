@@ -9,7 +9,7 @@ function Dashboard() {
   return (
     <DashboardLayout>
       <div className="p-4 mt-[20px]">
-        <div className="w-full h-auto lg:h-[250px] bg-gradient-to-r from-[#3884B6] from-10% to-[#57BE6C] via-20% to-100% mt-4 rounded-lg p-5 lg:p-8 flex flex-wrap lg:flex-nowrap justify-start items-center box-border">
+        <div className="w-full h-auto lg:h-[233px] bg-gradient-to-r from-[#3884B6] from-10% to-[#81e595] via-30% to-80% mt-4 rounded-lg p-5 lg:p-8 flex flex-wrap lg:flex-nowrap justify-start items-center box-border">
           <div className="w-full lg:w-[40%]">
             <h1 className="text-xl mb-4">Exciting features coming soon! 🚀</h1>
             <p className="text-[#2e2d2d]">
@@ -29,7 +29,7 @@ function Dashboard() {
           </div>
           <div className="lg:w-20" />
 
-          <div className="w-full flex justify-start items-baseline mt-4 mb-8 mx-auto transition animate-bouce">
+          <div className="w-full flex justify-start items-baseline mt-4 mb-8 mx-auto">
             <div className="text-center p-2 w-[63px] h-[68px] lg:w-[93px] lg:h-[98px] bg-[#fff] border-none rounded-lg mx-1 ">
               <div className="animate-pulse text-[25px] lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
                 00

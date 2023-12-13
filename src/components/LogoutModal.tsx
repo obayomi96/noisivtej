@@ -41,8 +41,8 @@ const LogoutModal: React.FC<IProps> = ({ closeModal, isVisible = false }) => {
               label="Logout"
               size="medium"
               variant="primary"
-              // here you can  perform an action or call a function through props that will then perform an action
               onClick={() => navigate("/home")}
+              noRounded={true}
             />
           </div>
         </div>

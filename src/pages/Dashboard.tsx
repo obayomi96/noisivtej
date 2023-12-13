@@ -23,6 +23,7 @@ function Dashboard() {
                 additionalClassname="mt-3"
                 iconPosition="left"
                 icon={<CampaignRoundedIcon />}
+                noRounded={true}
               />
             </div>
           </div>

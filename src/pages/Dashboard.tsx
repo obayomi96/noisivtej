@@ -28,27 +28,27 @@ function Dashboard() {
           </div>
           <div className="lg:w-20" />
 
-          <div className="w-full flex justify-start items-baseline mt-4 mb-8 mx-auto">
-            <div className="text-center p-2 w-[63px] h-[68px] lg:w-[93px] lg:h-[98px]  bg-[#fff] border-none rounded-lg mx-1 ">
-              <div className="text-[25px] lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
+          <div className="w-full flex justify-start items-baseline mt-4 mb-8 mx-auto transition animate-bouce">
+            <div className="text-center p-2 w-[63px] h-[68px] lg:w-[93px] lg:h-[98px] bg-[#fff] border-none rounded-lg mx-1 ">
+              <div className="animate-pulse text-[25px] lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
                 00
               </div>
               <p className="text-xs text-center text-[#323232]">DAYS</p>
             </div>
             <div className="text-center p-2 lg:w-[93px] lg:h-[98px] w-[63px] h-[68px] bg-[#fff] border-none rounded-lg lg:mx-1 ">
-              <div className="text-[25px] lg:text-[40px] font-[800] text line-through decoration-1 decoration-white">
+              <div className="animate-pulse text-[25px] lg:text-[40px] font-[800] text line-through decoration-1 decoration-white">
                 05
               </div>
               <p className="text-xs text-center text-[#323232]">HOURS</p>
             </div>{" "}
             <div className="text-center p-2 lg:w-[93px] lg:h-[98px]  w-[63px] h-[68px] bg-[#fff] border-none rounded-lg mx-1 ">
-              <div className="text-[25px] lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
+              <div className="animate-pulse text-[25px] lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
                 20
               </div>
               <p className="text-xs text-center text-[#323232]">MINUTES</p>
             </div>{" "}
             <div className="text-center p-2 lg:w-[93px] lg:h-[98px] w-[64px] h-[68px] bg-[#fff] border-none rounded-lg lg:mx-1">
-              <div className="text-[25px] lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
+              <div className="animate-pulse text-[25px] lg:text-[40px] font-[800] line-through decoration-1 decoration-white">
                 10
               </div>
               <p className="text-xs text-center text-[#323232]">SECONDS</p>

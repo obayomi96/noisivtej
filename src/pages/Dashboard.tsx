@@ -1,5 +1,4 @@
 import React from "react";
-
 import CampaignRoundedIcon from "@mui/icons-material/CampaignRounded";
 import DashboardLayout from "../components/DashboardLayout";
 import NewsUpdateCard from "../components/NewsUpdateCard";
@@ -20,12 +19,10 @@ function Dashboard() {
             <div className="w-full lg:w-[180px]">
               <Button
                 label="I want to be notified"
-                // size=""
                 variant="primary"
                 additionalClassname="mt-3"
                 iconPosition="left"
                 icon={<CampaignRoundedIcon />}
-                // onClick={() => navigate("/home")}
               />
             </div>
           </div>
@@ -57,15 +54,6 @@ function Dashboard() {
               <p className="text-xs text-center text-[#323232]">SECONDS</p>
             </div>
           </div>
-          {/* <div className="w-[400] h-[400]">
-            <img
-              className="w-[355px] h-[322px]"
-              width={355}
-              height={322}
-              src="/assets/images/pcopen.png"
-              alt=""
-            />
-          </div> */}
         </div>
 
         <div className="w-full h-auto mt-[50px]">

@@ -76,17 +76,16 @@ const Header: React.FC<HeaderProps> = ({ loggedIn = true, headerTitle }) => {
               </div>
             </Menu>
           </div>
-          <div className="w-[300px] flex items-center justify-end ml-[30px] px-5 py-2 bg-[#F9F9F9] rounded-3xl">
+          <div className="w-[250px] flex items-center justify-between ml-[30px] px-5 py-2 bg-[#F9F9F9] rounded-3xl">
             <img
               src="/assets/images/avatar.png"
               alt="avatar"
               className="w-[40px] h-[40px] rounded-full mr-4"
             />
-            <div className="w-[20px]" />
             <div>
               <p className="text-sm font-semibold ">Ayesha Habib</p>
               <p className="text-xs font-normal text-[#2e2d2d]">
-                AyeshaHabib@gmail.com
+                Warephasetech
               </p>
             </div>
             <div className="w-auto h-auto">

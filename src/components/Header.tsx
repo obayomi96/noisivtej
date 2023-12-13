@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ loggedIn = true, headerTitle }) => {
   return (
     <div
       className={clsx({
-        "hidden lg:flex z-10 top-0 items-center justify-between bg-[#FFFFFF] w-full h-[100px] m-auto mt-0 relative px-6":
+        "hidden lg:flex z-10 top-0 items-center justify-between bg-[#FFFFFF] w-full h-[100px] m-auto mt-0 relative px-6 lg:pr-10":
           true,
         "bg-[#FBFEF7]": loggedIn,
       })}
@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ loggedIn = true, headerTitle }) => {
           <div className="flex flex-col  pl-0 m-auto w-[30%] ml-3 ">
             <>
               <div className="text-[20px] font-[600]">
-                {headerTitle ? headerTitle : "Welcome, Ayesha!  😎"}
+                {headerTitle ? headerTitle : "Welcome, Ayesha! 🙂"}
               </div>
               <p className="text-sm text-[#2e2d2d]">
                 {headerTitle ? "" : "Get and manage purchase orders on the go."}
